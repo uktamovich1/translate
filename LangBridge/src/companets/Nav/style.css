@@ -1,0 +1,139 @@
+.header {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-contanier {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.header.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .header.light {
+    background-color: white;
+    color: black;
+  }
+  .bi-sun-fill{
+    color: white;
+  }  
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo>p {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menus {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-items {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    transition: 1s;
+    font-size: 20px;
+    color: rgb(114, 110, 110);
+}
+a{
+    color: rgb(106, 102, 102);
+}
+.icon{
+    display: flex;
+    gap: 30px;  
+    color: rgb(106, 102, 102);
+    font-size: 25px;
+}
+.menu-item:hover{
+    transition: 1s;
+    transform: translateX(4px);
+    transform: translateY(-4px);
+    color: rgb(46, 46, 179);
+    text-shadow: 2px 5px 10px rgb(46, 46, 179);
+}
+.icon>i{
+    transition: 1s;
+}
+.icon>i:hover{
+    transition: 1s;
+   color: black;
+}
+.bars{
+    display: none;
+    font-size: 30px;
+    color: rgb(106, 102, 102);
+    transition: 1s;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+}
+.bars:hover{
+   transition: 1s;
+   color: black;
+}
+button{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+@media(max-width:577px) {
+    .header-contanier{
+        width: 506px;
+        padding: 10px;
+        align-items: center;
+    }
+    .header{
+        width: 100vw;
+    }
+    .theme-btn {
+        border: none;
+        background: transparent;
+        border: none;
+        font-size: 22px;
+        cursor: pointer;
+        color: inherit;
+      }
+    .icon>i{
+        display: none;
+    }
+    .logo>img{
+      width: 20px;
+    }
+    .logo>p{
+       font-size: 18px;
+    }
+    .menus{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .bars{
+        display: flex;
+    }
+    .menu-items{
+        display: none;
+    }
+}
